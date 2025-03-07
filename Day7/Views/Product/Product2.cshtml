@@ -1,0 +1,10 @@
+﻿@model AspNetCoreMVC.Models.Product
+@{
+    ViewData["Title"] = "Single Product (Direct Model)";
+}
+<h2>@ViewData["Title"]</h2>
+<p><strong>Code:</strong> @Model.PCode</p>
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>Stock:</strong> @Model.QtyInStock</p>
+<p><strong>Details:</strong> @Model.Details</p>
+<p><strong>Price:</strong> $@Model.Price</p>

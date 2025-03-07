@@ -1,0 +1,18 @@
+﻿@model List<AspNetCoreMVC.Models.Product>
+@{
+    ViewData["Title"] = "Product List (Direct Model)";
+}
+<h2>@ViewData["Title"]</h2>
+<table border="1">
+    <tr><th>Code</th><th>Name</th><th>Stock</th><th>Details</th><th>Price</th></tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.PCode</td>
+            <td>@product.Name</td>
+            <td>@product.QtyInStock</td>
+            <td>@product.Details</td>
+            <td>$@product.Price</td>
+        </tr>
+    }
+</table>
