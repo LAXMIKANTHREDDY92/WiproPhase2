@@ -1,0 +1,34 @@
+﻿@model EmployeeManagement.Models.Employee
+
+<h2>Edit Employee</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Name:</label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name" style="color:red;"></span>
+
+    <label>Date of Birth:</label>
+    <input asp-for="DateOfBirth" type="date" />
+    <span asp-validation-for="DateOfBirth" style="color:red;"></span>
+
+    <label>Date of Joining:</label>
+    <input asp-for="DateOfJoining" type="date" />
+    <span asp-validation-for="DateOfJoining" style="color:red;"></span>
+
+    <label>Salary:</label>
+    <input asp-for="Salary" />
+    <span asp-validation-for="Salary" style="color:red;"></span>
+
+    <label>Department:</label>
+    <select asp-for="Dept">
+        <option value="HR">HR</option>
+        <option value="Accts">Accts</option>
+        <option value="IT">IT</option>
+    </select>
+    <span asp-validation-for="Dept" style="color:red;"></span>
+
+    <button type="submit">Update</button>
+    <a href="@Url.Action("Index")">Cancel</a>
+</form>
