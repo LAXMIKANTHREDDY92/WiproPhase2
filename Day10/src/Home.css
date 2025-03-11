@@ -1,0 +1,28 @@
+/* Table Styles */
+.batch-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Table Header */
+  .batch-table th {
+    background-color: #007bff;  /* Blue header */
+    color: white;
+    padding: 12px;
+  }
+  
+  /* Alternate Row Colors */
+  .batch-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+  }
+  
+  .batch-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+  }
+  
+  /* Hover Effect */
+  .batch-table tbody tr:hover {
+    background-color: #cce5ff; /* Light blue on hover */
+  }
+  
